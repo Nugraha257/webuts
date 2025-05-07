@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIAM UB - Profil</title>
+    <link rel="stylesheet" href="profil.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="OIP-removebg-preview.png" alt="Logo Universitas">
+            <h1>SIAM UB</h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="Mata Kuliah.html">Mata Kuliah</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="photo-section">
+            <img id="profile-photo" src="Gambar WhatsApp 2024-10-21 pukul 18.00.45_fe165dc5.jpg" alt="Student Photo">
+            <input type="file" id="photo-upload" style="display: none;" onchange="changePhoto(event)">
+            <button onclick="document.getElementById('photo-upload').click()">Change Photo</button>
+        </div>
+        <div class="menu">
+            <button onclick="showSection('aboutme')">About Me</button>
+            <button onclick="showSection('courses')">Courses</button>
+            <button onclick="showSection('settings')">Settings</button>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div id="aboutme" class="section active-section">
+            <h2>About Me</h2>
+            <p><strong>First Name:</strong> <span id="display-first-name">Nugraha</span></p>
+            <p><strong>Last Name:</strong> <span id="display-last-name">-</span></p>
+            <p><strong>Email Address:</strong> <span id="display-email">nugraha@gmail.com</span></p>
+            <p><strong>Department:</strong> <span id="display-department">Software</span></p>
+            <p><strong>Country:</strong> <span id="display-country">Indonesia</span></p>
+            <p><strong>Phone:</strong> <span id="display-phone">123-456-7890</span></p>
+            <p><strong>Interests:</strong> <span id="display-interests">Software Engineer</span></p>
+            <p><strong>Address:</strong> <span id="display-address">Jl. Example No.123</span></p>
+        </div> 
+
+        <div id="courses" class="section">
+            <h2>Courses</h2>
+            <table class="course-table">
+                <tr>
+                    <td>
+                        <img src="R.jpeg" alt="Course 1" onclick="location.href='course1.html'">
+                        <p>IF027-24 Pemrograman Web</p>
+                    </td>
+                    <td>
+                        <img src="OIP (1).jpeg" alt="Course 2" onclick="location.href='course2.html'">
+                        <p>IF028-24 Sistem Basis Data</p>
+                    </td>
+                    <td>
+                        <img src="OIP (2).jpeg" alt="Course 3" onclick="location.href='course3.html'">
+                        <p>IF029-24 Sistem Operasi</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="settings" class="section">
+            <h2>Settings</h2>
+            <div class="table-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Field</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>First Name:</td>
+                            <td><input type="text" id="first-name" value="Nugraha"></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name:</td>
+                            <td><input type="text" id="last-name" value="-"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="email" id="email" value="nugraha@gmail.com"></td>
+                        </tr>
+                        <tr>
+                            <td>Department:</td>
+                            <td><input type="text" id="department" value="Software"></td>
+                        </tr>
+                        <tr>
+                            <td>Country:</td>
+                            <td><input type="text" id="country" value="Indonesia"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone:</td>
+                            <td><input type="text" id="phone" value="123-456-7890"></td>
+                        </tr>
+                        <tr>
+                            <td>Interests:</td>
+                            <td><input type="text" id="interests" value="Software Engineer"></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td><input type="text" id="address" value="Jl. Example No.123"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" onclick="saveSettings()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2030 Sinau LMS. Universitas Brawijaya.</p>
+    </footer>
+    <script src="profil.js"></script>
+</body>
+</html>

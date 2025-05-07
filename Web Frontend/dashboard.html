@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIAM - Dashboard</title>
+    <link rel="stylesheet" href="modif.css"> 
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="OIP-removebg-preview.png" alt="Logo Universitas">
+            <h1>SIAM UB</h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="Mata Kuliah.html">Mata Kuliah</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="calendar-header">
+            <div class="user-info">
+                <h2>Hi, <span id="userName">Nugraha</span>!</h2>
+            </div>
+            <div class="month-year">
+                <select id="monthSelect">
+                    <option value="0">Januari</option>
+                    <option value="1">Februari</option>
+                    <option value="2">Maret</option>
+                    <option value="3">April</option>
+                    <option value="4">Mei</option>
+                    <option value="5">Juni</option>
+                    <option value="6">Juli</option>
+                    <option value="7">Agustus</option>
+                    <option value="8">September</option>
+                    <option value="9">Oktober</option>
+                    <option value="10">November</option>
+                    <option value="11">Desember</option>
+                </select>
+                <select id="yearSelect">
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2023">2026</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="calendar">
+            <div class="weekdays">
+                <div>Senin</div>
+                <div>Selasa</div>
+                <div>Rabu</div>
+                <div>Kamis</div>
+                <div>Jumat</div>
+                <div>Sabtu</div>
+                <div>Minggu</div>
+            </div>
+            <div class="days" id="daysContainer"></div>
+        </div>
+
+        <div class="nav-container">
+            <button class="nav-btn" id="prevMonth">&larr;</button>
+            <button class="nav-btn" id="nextMonth">&rarr;</button>
+        </div>
+
+        <div class="extra-links">
+            <h3>My courses</h3>
+            <ul>
+                <li><a href="https://example.com/matkul1" target="_blank">IF027-24 Pemrograman Web</a></li>
+                <li><a href="https://example.com/matkul2" target="_blank">IF028-24 Sistem Basis Data</a></li>
+                <li><a href="https://example.com/matkul3" target="_blank">IF029-24 Sistem Operasi</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2030 Sinau LMS. Universitas Brawijaya.</p>
+    </footer>
+    <script src="calendar.js"></script>
+</body>
+</html>

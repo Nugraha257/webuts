@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Sinau LMS</title>
+    <link rel="stylesheet" href="modif.css">
+</head>
+<body>
+    <div id="register-container" class="login-container">
+        <h2>Daftar Sinau LMS</h2>
+        <form id="registerForm">
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            <button type="submit">Daftar</button>
+        </form>
+        <p id="register-error-message" style="color: red;"></p>
+        <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

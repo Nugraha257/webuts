@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIAM UB - Mata Kuliah</title>
+    <link rel="stylesheet" href="modif.css">
+</head>
+<body>
+
+    <div id="main-container">
+        <header>
+            <nav>
+                <div class="logo-title">
+                    <img src="OIP-removebg-preview.png" alt="Logo UB">
+                    <h1>SIAM UB</h1>
+                </div>
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="Mata Kuliah.html">Mata Kuliah</a></li>
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="course-list">
+                <h2>Available Courses</h2>
+                <div class="courses">
+                    <div class="course">
+                        <img src="R.jpeg" alt="Pemrograman Web">
+                        <h3>IF207-24 Pemrograman Web</h3>
+                        <p>Dosen: Nugraha S.Kom.</p>
+                        <button class="enter-course-btn" data-course-id="Pemrograman Web">Masuk</button>
+                    </div>
+                    <div class="course">
+                        <img src="OIP (1).jpeg" alt="Sistem Basis Data">
+                        <h3>IF208-24 Sistem Basis Data</h3>
+                        <p>Dosen: Aditya Juliano Ashari S.Kom.</p>
+                        <button class="enter-course-btn" data-course-id="Sistem Basis Data">Masuk</button>
+                    </div>
+                    <div class="course">
+                        <img src="OIP (2).jpeg" alt="Sistem Operasi">
+                        <h3>IF209-24 Sistem Operasi</h3>
+                        <p>Dosen: Annga Eka Pradana S.Kom.</p>
+                        <button class="enter-course-btn" data-course-id="Sistem Operasi">Masuk</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2030 Sinau LMS. Universitas Brawijaya.</p>
+        </footer>
+    </div>
+
+    <!-- Detail Mata Kuliah -->
+    <div id="course-detail" style="display: none;">
+        <header>
+            <nav>
+                <h1>Detail Mata Kuliah</h1>
+                <button id="back-to-courses">Kembali ke Daftar Mata Kuliah</button>
+            </nav>
+        </header>
+        <main>
+            <aside class="sidebar">
+                <ul>
+                    <li><button id="absen-menu">Absen</button></li>
+                    <li><button id="quiz-menu">Quiz</button></li>
+                    <li><button id="materi-menu">Materi</button></li>
+                    <li><button id="zoom-menu">Zoom</button></li>
+                    <li><button id="diskusi-menu">Diskusi</button></li>
+                </ul>
+            </aside>
+            <section class="content">
+                <div id="description-content">Pilih menu untuk melihat detail.</div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2030 Sinau LMS. Universitas Brawijaya.</p>
+        </footer>
+    </div>
+
+    <script src="matakuliah.js"></script>
+</body>
+</html>
